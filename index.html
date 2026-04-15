@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Pulsera - Tienda de Accesorios</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos (opcional, usamos Font Awesome para el carrito) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header y Navegación -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Bella<span>Pulsera</span></h1>
+            </div>
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+                <div class="carrito-icono" id="carritoIcono">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="contador" id="contadorCarrito">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio">
+        <div class="container hero-contenido">
+            <div class="hero-texto">
+                <h2>Accesorios que cuentan tu historia</h2>
+                <p>Descubre nuestra colección exclusiva de pulseras hechas a mano con materiales de alta calidad. El estilo perfecto para cada ocasión.</p>
+                <a href="#catalogo" class="btn">Ver Catálogo</a>
+            </div>
+            <div class="hero-imagen">
+                <img src="https://images.unsplash.com/photo-1551527539-4902e439243a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Pulseras elegantes">
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section class="catalogo" id="catalogo">
+        <div class="container">
+            <h2 class="titulo-seccion">Nuestras Pulseras</h2>
+            <div class="productos-grid" id="productosGrid">
+                <!-- Los productos se cargarán aquí con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section class="nosotros" id="nosotros">
+        <div class="container nosotros-contenido">
+            <div class="nosotros-imagen">
+                <img src="https://images.unsplash.com/photo-1544636341-c71890830823?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Haciendo pulseras">
+            </div>
+            <div class="nosotros-texto">
+                <h2>Sobre Nosotros</h2>
+                <p>En Bella Pulsera, nos apasiona crear accesorios únicos que resalten tu belleza y personalidad. Cada pieza es elaborada a mano por artesanos expertos, utilizando materiales seleccionados cuidadosamente para garantizar durabilidad y estilo.</p>
+                <p>Creemos que una pulsera no es solo un accesorio, sino un recuerdo, un símbolo o una expresión de quien la lleva. ¡Gracias por apoyar el arte hecho a mano!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <h2 class="titulo-seccion">Contáctanos</h2>
+            <div class="contacto-formulario">
+                <form id="formularioContacto">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu correo" required>
+                    <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal del Carrito -->
+    <div class="modal-carrito" id="modalCarrito">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" id="cerrarModal">&times;</span>
+            <h2>Tu Carrito de Compras</h2>
+            <div id="listaCarrito">
+                <p class="vacio">El carrito está vacío</p>
+            </div>
+            <div class="total">
+                <h3>Total: $<span id="totalCarrito">0.00</span></h3>
+            </div>
+            <button class="btn comprar-btn" id="comprarBtn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Bella Pulsera. Todos los derechos reservados.</p>
+            <div class="redes">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
